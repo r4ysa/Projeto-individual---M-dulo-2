@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de mensagens</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="codificador.js"></script>
+</head>
+<body>
+
+    <div id="container">
+
+        <h1>Codificador de mensagens</h1>
+
+        <p class="paragrafo">Aqui você poderá tornar sua mensagem demonstrada em código possível para a transmissão. Temos a opção de <strong>Cifra de César e Base64</strong>. Para iniciar, selecione o tipo de codificação abaixo:</p>
+
+        <div class="caixa1">
+            <label for="" class="textoIncremento">Escolha a ferramenta:</label>
+            <div class="dropdown">
+                <button class="dropbtn">Selecione</button>
+                <div class="dropdown-content">
+                    <a href="cifra-cesar.html">Cifra de César</a>
+                    <a href="base64.html">Base64</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <br>
+
+        <div class="caixa">
+            <label for="" class="texto">Mensagem para criptografar:</label> <br>
+            <textarea name="" id="mensagem2" cols="30" rows="15"></textarea> <br>
+        </div>
+        
+        <div class="caixa">
+            <label for="" class="texto">Mensagem criptografada:</label> <br>
+            <textarea name="" id="respostaCripto2" cols="30" rows="15"></textarea> <br>
+        </div>
+        
+        <div class="caixa">
+            <label for="" class="texto">Mensagem descriptografada:</label> <br>
+            <textarea name="" id="respostaDescripto2" cols="30" rows="15"></textarea> <br>
+        </div>
+
+        <div class="botao">
+            <input type="submit" value="Codificar" id="codificarBase" onclick="CodificaBase()">
+            <input type="submit" value="Decodificar" id="decodificarBase" onclick="DecodificaBase()">
+        </div>
+
+        <!--<p>Selecione o desejado e depois clique no botão ao lado!</p>
+        <input type="radio" name="codificar" id="Radiocodificar">
+        <label for="">Codificar</label> <br>
+        <input type="radio" name="decodificar" id="Radiodecodificar">
+        <label for="">Decodificar</label>-->
+        
+    </div>
+    
+</body>
+</html>
